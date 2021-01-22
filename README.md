@@ -3,7 +3,10 @@
 ## Python script `copy_mp3_tag_to_flac.py`
 
 The Python script `copy_mp3_tag_to_flac.py` copies the tag of a .mp3 file to a .flac file
-* It takes two arguments: The source (.mp3) file and the target (.flac) file, e.g. `copy_mp3_tag_to_flac.py myOldLowQuality.mp3 myNewLosslessQuality.flac`
+* It takes two arguments: The source (.mp3) file and the target (.flac) file, e.g.
+```
+$ copy_mp3_tag_to_flac.py  myOldLowQuality.mp3  myNewLosslessQuality.flac
+```
 
 #### Prerequisites
 * Python 3.6 or above
