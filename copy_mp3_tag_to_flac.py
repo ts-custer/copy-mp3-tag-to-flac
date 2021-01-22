@@ -1,9 +1,9 @@
 #!/usr/bin/python3.8
 
 """
-A program to copy all audio tags including embedded cover picture of a mp3 file to a flac file.
+A script to copy all audio tags including embedded cover picture of a mp3 file to a flac file.
 
-Requires library "mutagen"!
+Requires library "mutagen" (https://github.com/quodlibet/mutagen) !
 
 Usage: copy_mp3_tag_to_flac.py <source file> <target file>
 """
