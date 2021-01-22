@@ -15,3 +15,16 @@ The Python script `copy_mp3_tag_to_flac.py` copies the tag of a .mp3 file to a .
 The Bash script `copy_audio_tags.sh` copies the mp3 tags of *all* files of one directory to *all* flac files of another directory!
 * It calls/uses `copy_mp3_tag_to_flac.py`
 
+#### Usage
+
+On your console you must be in the directory that contains the .flac files which audio tags are to be updated. Maybe you must first navigate into it:
+```
+$ cd <your directory with .flac files>`
+```
+Then you can execute the script with:
+```
+$ copy_audio_tags.sh <source directory> [-t]
+```
+The source directory is the directory with the .mp3 files which audio tags are to be copied.
+
+You can set option `-t` to execute the script in test mode - then it will only do some printouts but will not save anything.
