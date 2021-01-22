@@ -19,11 +19,11 @@ The Bash script `copy_audio_tags.sh` copies the mp3 tags of *all* files of one d
 
 On your console you must be in the directory that contains the .flac files which audio tags are to be updated. Maybe you must first navigate into it:
 ```
-$ cd <your directory with .flac files>`
+$ cd <directory_with_flac_files>`
 ```
 Then you can execute the script with:
 ```
-$ copy_audio_tags.sh <source directory> [-t]
+$ copy_audio_tags.sh <source_directory> [-t]
 ```
 The source directory is the directory with the .mp3 files which audio tags are to be copied.
 
