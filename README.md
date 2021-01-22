@@ -1,4 +1,4 @@
-# audio-file-tools
+# Copy mp3 tag to flac
 
 ## Directory "copy_tags_of_multiple_audio_files"
 * The Bash script `copy_audio_tags.sh` copies the mp3 tags of *all* files of one directory to *all* flac files of another directory.
