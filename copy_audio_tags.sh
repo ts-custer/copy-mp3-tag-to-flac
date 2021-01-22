@@ -93,10 +93,10 @@ function execute() {
 
   for ((i = 0; i < ${number_of_target_files}; i++))
   do
-    echo "copy_audio_tags_from_mp3_to_flac.py \"${source_files[$i]}\" \"${target_files[$i]}\""
+    echo "copy_mp3_tag_to_flac.py \"${source_files[$i]}\" \"${target_files[$i]}\""
     if [ "${test_mode}" -eq 0 ]
     then
-      $(copy_audio_tags_from_mp3_to_flac.py "${source_files[$i]}" "${target_files[$i]}")
+      $(copy_mp3_tag_to_flac.py "${source_files[$i]}" "${target_files[$i]}")
     fi
   done
 

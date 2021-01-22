@@ -1,4 +1,4 @@
-#!/usr/bin/python3.8
+#!/usr/bin/python3
 
 """
 A script to copy all audio tags including embedded cover picture of a mp3 file to a flac file.
