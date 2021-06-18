@@ -40,18 +40,18 @@ def main():
     flac_file = mutagen.File(args.target_file)
     # TODO Check if it's really a flac file
 
-    frame_ids = set([s[:4] for s in mp3_file.tags.keys()])
-    for frame_id in frame_ids:
-        copy_frame(mp3_file, flac_file, frame_id)
+    frame_id_to_mutagen_key = {mutagen_key[:4]: mutagen_key for mutagen_key in mp3_file.tags.keys()}
+    for frame_id, mutagen_key in frame_id_to_mutagen_key.items():
+        copy_frame(mp3_file, flac_file, frame_id, mutagen_key)
     copy_picture(mp3_file, flac_file)
     set_description(flac_file)
     flac_file.save()
 
 
-def copy_frame(mp3_file, flac_file, frame_id):
+def copy_frame(mp3_file, flac_file, frame_id, mutagen_key):
     field_name = frame_id_mapping.get(frame_id)
     if field_name:
-        content = mp3_file.tags.get(frame_id) and mp3_file.tags.get(frame_id).text[0]
+        content = mp3_file.tags.get(mutagen_key) and mp3_file.tags.get(mutagen_key).text[0]
         if content:
             flac_file[field_name] = str(content)
 
