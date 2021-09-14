@@ -31,3 +31,8 @@ $ copy_audio_tags.sh <source_directory> [-t]
 The source directory is the directory with the .mp3 files which audio tags are to be copied.
 
 You can set option `-t` to execute the script in test mode - then it will only do some printouts but will not save anything.
+
+#### Misc
+
+Some nice pieces of information here ...
+
